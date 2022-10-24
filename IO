@@ -1,0 +1,17 @@
+import java.io.*;
+class A
+{
+public static void main(String args[])
+{
+int ch;
+File f=new File("fileinputstream1java");
+File InputStream fis=new FileInputStream(f);
+System.out.println("File Content is;");
+System.out.println("total available byte is :"+fis.available());
+while(ch=fis.read())!=-1)
+{
+System.out.println((char ch));
+}
+fis.close();
+}
+}
