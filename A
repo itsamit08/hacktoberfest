@@ -1,0 +1,22 @@
+import java.awt.*;
+import java.awt.event.*;
+class A extends Frame
+{
+A(String s1)
+{
+super (s1);
+}
+}
+public static void main(String args[])
+{
+A f=new A("my Frame");
+f.setize(400,400);
+f.setVisible(true);
+f.addWindowListener(new event_class());
+class event_class extends windowAdapter
+{
+public void Windowclosing();
+{
+System.exit(0);
+}
+}
